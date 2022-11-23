@@ -1,0 +1,41 @@
+{% load static %}
+{% block body %}
+<html>
+<head>
+{% include 'header.html' %}
+
+</head>
+<body>
+{% include 'navigation.html' %}
+
+<div class="container" style = "margin-top : 80px">
+      <center><img src="{% static 'images/aboutus.gif' %}" width=940 height = 160 class="img-responsive">
+
+	  <br><br>
+      <div class="row">
+          <center> <div class="container col-sm-9" style = "font-weight : bold ; margin-top : 30px; border:5px outset grey; padding:30px; font-size:19px">
+            Car Parking system is a Web-Application allows you to manage the entire parking system.
+            This project helps to maintain the details of the vehicle owner, number, type, date, and the amount of time the vehicle is parked in the area.
+            Admin can see the total numbers of vehicle parked and also the space left to park the vehicle.
+            Accordingly, you can also generate the bills for the particular vehicle parked in the area.
+            This information is useful for all those who want to maintain the database of the individual who has parked their vehicles in the surroundings.
+            Overall it simply manages the entire car parking system. 
+            
+          </div>
+        
+      </div>
+  </div>
+  <br><br><br><br>
+  <footer class="container pt-2 mt-2 text-center">
+    <p style = "font-size : 15pt ; color : grey ; font-weight : bold">
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved
+        <span style = "color : brown">|</span>
+        {% comment %} <span style = "color : #006400">This website is made with <i class="fas fa-heart icon-heart text-warning"></i> by </span><a class= "glow" href="#" target="_blank">Pankaj Panjwani</a> {% endcomment %}
+  
+    </p>
+  
+  
+  </footer>
+  </body>
+  </html>
+{% endblock %}
